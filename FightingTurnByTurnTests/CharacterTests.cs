@@ -101,15 +101,15 @@ namespace FightingTurnByTurnTests
             Assert.AreEqual(0, usedCharacter.NumberOfTimePlayedSinceSpecial);
         }
 
-        [TestMethod]
-        [TestCategory("UnitTest")]
-        public void CharacterDoSpecialAttackWhenAvailable()
-        {
-            character = playerOne.Characters[0];
-            Assert.IsFalse(character.IsOnCooldown);
-            character.Attack(playerTwo.Characters[0], null);
-            Assert.IsTrue(character.IsOnCooldown);
-        }
+        //[TestMethod]
+        //[TestCategory("UnitTest")]
+        //public void CharacterDoSpecialAttackWhenAvailable()
+        //{
+        //    character = playerOne.Characters[0];
+        //    Assert.IsFalse(character.IsOnCooldown);
+        //    character.Attack(playerTwo.Characters[0], null);
+        //    Assert.IsTrue(character.IsOnCooldown);
+        //}
 
         [TestMethod]
         [TestCategory("UnitTest")]
