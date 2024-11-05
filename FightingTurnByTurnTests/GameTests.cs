@@ -102,7 +102,7 @@ Divad");
         {
             game.Start();
             game.Turn();
-            Assert.AreEqual(2, game.CurrentTurn);
+            Assert.AreEqual(game.CurrentTurn, 2);
         }
 
         [TestMethod]
