@@ -26,7 +26,7 @@ namespace FightingTurnByTurn
 
         public void SimpleAttack(Character character)
         {
-            character.LifePoint -= character.HasShield ? (int) Decimal.Round(Power / 2) : Power;
+            character.LifePoint -= character.HasShield ? (int) Decimal.Round((decimal)Power / 2) : Power;
             character.HasShield = false;
             HasAlreadyAttack = true;
             NumberOfTimePlayedSinceSpecial += 1;

@@ -124,7 +124,7 @@ namespace FightingTurnByTurnTests
             var actualCharacterLife = character.LifePoint;
 
             Assert.IsTrue(previousCharacterLife > actualCharacterLife);
-            Assert.AreEqual(previousCharacterLife - actualCharacterLife, (int) Decimal.Round(game.Players[1].Characters[0].Power / 2));
+            Assert.AreEqual(previousCharacterLife - actualCharacterLife, (int) Decimal.Round((decimal) game.Players[1].Characters[0].Power / 2));
             Assert.IsFalse(character.HasShield);
         }
 
